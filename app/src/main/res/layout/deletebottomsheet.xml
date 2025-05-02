@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/deleteConfirmationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/delete_sheet">
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="100dp"
+        android:layout_height="7dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/deleteshape"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/deleteConfirmationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/deleteMessageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you sure you want to delete\n this note?"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/noButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/nodelete"
+        android:padding="14dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/yesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/yes"
+        android:padding="14dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

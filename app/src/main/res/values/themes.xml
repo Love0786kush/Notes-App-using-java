@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.second" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Light Theme Customization -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="colorOnPrimary">@color/red</item>
+
+        <item name="colorSecondary">@color/red</item>
+
+        <item name="colorPrimaryDark">@color/red</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+
+        <!-- Status Bar and Navigation Bar -->
+        <item name="android:statusBarColor">@color/red</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="Progressbar">
+        <item name="colorSecondary">@color/red</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Modal</item>
+
+    </style>
+
+    <style name="Modal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/delete_sheet</item>
+    </style>
+
+
+    <!-- Main Theme -->
+    <style name="Theme.NotesAppWithMvvm" parent="Base.Theme.NotesAppWithMvvm" />
+</resources>
